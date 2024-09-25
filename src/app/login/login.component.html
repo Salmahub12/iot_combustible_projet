@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="login.component.css">
+    
+    <div class="logo">
+        <img src="/image.png" alt="Description de l'image">
+    </div> 
+    
+    <div class="main-container">
+        <div class="partgauche">
+            <div class="container">
+                <img src="/téléchargement.png" alt="Description de l'image">
+            </div>
+        </div>
+        
+        <div class="partdroite">
+
+<form *ngIf="registerForm" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="firstname" class="form-label">Nom d'utilisateur</label>
+      <input id="firstname" type="text" class="form-control" 
+             [ngClass]="{'isInvalid': registerForm.get('firstname')?.invalid && registerForm.get('firstname')?.touched}" 
+             formControlName="firstname">
+      <div class="invalid-feedback">
+        <span *ngIf="registerForm.get('firstname')?.errors?.['required']">
+          veuillez rentrer votre nom d'utilisateur
+        </span>
+      </div>
+    </div>
+  
+    <div>
+      <label for="password" class="form-label">Mot de Passe</label>
+      <input id="password" type="password" class="form-control" 
+             [ngClass]="{'isInvalid': registerForm.get('password')?.invalid && registerForm.get('password')?.touched}" 
+             formControlName="password">
+      <div class="invalid-feedback">
+        <span *ngIf="registerForm.get('password')?.errors?.['required']">
+            Mot de passe requis
+          </span>
+          
+      </div>
+    </div>
+  
+    <button type="submit" class="btn-primary" [routerLink]="['tank']">S'enregistrer</button>
+  </form>
+ 
+
+<router-outlet></router-outlet>

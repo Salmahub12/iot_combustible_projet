@@ -1,0 +1,74 @@
+body{
+    background-color: #9f73d5;
+}
+.main-container {
+    display: flex;              
+    align-items: flex-start;   
+    gap: 60px;   
+    margin-top: 5%;
+    margin-left: 18%;
+}
+
+/* Partie gauche */
+.partgauche {
+    display: flex;
+    align-items: center;        
+}
+
+/* Partie droite */
+.partdroite {
+    display: flex;
+    flex-direction: column;     
+    gap: 10px;                  
+}
+
+.logo img {
+    width: 200px;
+
+}
+
+.container img {
+    width: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;     
+    background-color: #f9f9f9;    
+    padding: 60px;                
+    border-radius: 8px;           
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+                    
+}
+
+.form-label {
+    font-weight: bold;              
+}
+
+.form-control {
+    padding: 8px; 
+    border: 1px solid #ccc;      
+    border-radius: 4px;          
+    width: 100%;                  
+    box-sizing: border-box;                  
+}
+
+.btn-primary {
+    padding: 10px;
+    background-color:  #9f73d5 ;     
+    color: rgb(246, 240, 250);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary:hover{
+    background-color: blueviolet;
+}
+
+.btn-primary a {
+    color: white;
+    text-decoration: none;          
+}
