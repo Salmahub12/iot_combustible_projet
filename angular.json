@@ -3,6 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "IotCombustibleProjet": {
       "projectType": "application",
       "schematics": {
@@ -16,6 +17,11 @@
           "standalone": false
         }
       },
+=======
+    "iot_combustible_projet": {
+      "projectType": "application",
+      "schematics": {},
+>>>>>>> 3d6922ecd39047e98669bf97e6bc380fc3378cb8
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +29,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/iot-combustible-projet",
+=======
+            "outputPath": "dist/iot_combustible_projet",
+>>>>>>> 3d6922ecd39047e98669bf97e6bc380fc3378cb8
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -74,10 +84,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "IotCombustibleProjet:build:production"
             },
             "development": {
               "buildTarget": "IotCombustibleProjet:build:development"
+=======
+              "buildTarget": "iot_combustible_projet:build:production"
+            },
+            "development": {
+              "buildTarget": "iot_combustible_projet:build:development"
+>>>>>>> 3d6922ecd39047e98669bf97e6bc380fc3378cb8
             }
           },
           "defaultConfiguration": "development"
@@ -107,8 +124,11 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": "77f0f797-742f-4c84-a43f-198b18d987d9"
+=======
+>>>>>>> 3d6922ecd39047e98669bf97e6bc380fc3378cb8
   }
 }

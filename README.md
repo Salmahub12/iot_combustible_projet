@@ -1,6 +1,10 @@
 # IotCombustibleProjet
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+=======
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+>>>>>>> 3d6922ecd39047e98669bf97e6bc380fc3378cb8
 
 ## Development server
 
